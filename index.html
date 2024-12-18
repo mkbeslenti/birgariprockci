@@ -1,66 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Adeta Bar</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/jpeg" href="WhatsApp Image 2024-12-11 at 02.49.51.jpeg">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-}
-.menu{
-    display: none;
-}
-.modal-logo{
-    width: 100px;
-    margin: 0 auto;
-    display: block;
-}
-h3{
-    text-align: center;
-}
-p::selection{
-    background-color:#fc4103 ;
-    color: azure;
-}
-h4::selection{
-    background-color:#fc0303 ;
-    color: azure;
-}
-h3::selection{
-    background-color:#03f4fc ;
-    color: azure;
-}
-h1::selection{
-    background-color:#4afc03 ;
-    color: azure;
-}
-</style>
+    <title>Adeta Bar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpeg" href="WhatsApp Image 2024-12-11 at 02.49.51.jpeg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="mkb.css">
+    <style>
+        body {font-family: "Times New Roman", Georgia, Serif;}
+        h1, h2, h3, h4, h5, h6 {font-family: "Playfair Display"; letter-spacing: 5px;}
+        p::selection {background-color:#fc4103; color: azure;}
+        h4::selection {background-color:#fc0303; color: azure;}
+        h3::selection {background-color:#03f4fc; color: azure;}
+        h1::selection {background-color:#4afc03; color: azure;}
+        h3{
+          text-align: center;
+        }
+        .harita{
+          text-align: center;
+        }
+        p{
+          text-align: center;
+        }
+    </style>
 </head>
 <body>
 
-<!--navbar-->
+<!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">Adeta Bar</a>
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">Hakkında</a>
-      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
-      <a href="#contact" class="w3-bar-item w3-button">İletişim</a>
+    <div class="w3-bar w3-black w3-padding w3-card" style="letter-spacing:4px;">
+        <a href="#home" class="w3-bar-item w3-button">Adeta Bar</a>
+        <a href="javascript:void(0);" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="toggleMenu()">☰</a>
+        <div class="w3-right w3-hide-small w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button">Hakkında</a>
+            <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+            <a href="#contact" class="w3-bar-item w3-button">İletişim</a>
+        </div>
     </div>
-  </div>
+    <div id="mobileMenu" class="w3-bar-block w3-black w3-hide w3-hide-large w3-large">
+        <a href="#about" class="w3-bar-item w3-button">Hakkında</a>
+        <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+        <a href="#contact" class="w3-bar-item w3-button">İletişim</a>
+    </div>
 </div>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img src="iceriden.png" alt="Bar Fotografi" width="1600" height="800">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity w3-black">
-    <h1 class="w3-xxlarge">Adeta Bar</h1>
-  </div>
+<!-- Slider Header -->
+<header class="w3-display-container w3-content" style="max-width:1600px; min-width:500px" id="home">
+    <div class="w3-content w3-display-container" style="position:relative;">
+        <!-- Slides -->
+        <img class="mySlides w3-animate-opacity" src="WhatsApp Image 2024-12-18 at 03.42.17 (3).jpeg">
+        <img class="mySlides w3-animate-opacity" src="WhatsApp Image 2024-12-18 at 03.42.17.jpeg">
+        <img class="mySlides w3-animate-opacity" src="WhatsApp Image 2024-12-18 at 03.42.18.jpeg">
+    </div>
+
+    <!-- Overlay Title -->
+    <div class="w3-display-bottomleft w3-padding-large w3-opacity w3-black">
+        <h1 class="w3-xxlarge">Adeta Bar</h1>
+    </div>
 </header>
 
 <div class="w3-content" style="max-width:1100px">
@@ -154,6 +151,9 @@ h1::selection{
         <h3>Çağrı Merkezi 0850 646 6464</h3>
         <h3><span class="w3-tag"></span>İstek/Öneri ve Şikayetleriniz için info@adetabar.com'a mail atabilirsiniz. </h3>
         <p class="w3-xxlarge"><strong>Bize Ulaşın</strong></p>
+        <div class="harita">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1662.0163125970832!2d29.40566472963192!3d38.674238386515!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1734483098828!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <form id="contactForm">
             <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="İsim..." required name="Name"></p>
             <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="E-mail..." required name="Email"></p>
@@ -178,7 +178,39 @@ h1::selection{
         document.getElementById("successModal").style.display = "block"; 
     });
 </script>
-  
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+        var x = document.getElementById("mobileMenu");
+        if (x.classList.contains("w3-show")) {
+            x.classList.remove("w3-show");
+        } else {
+            x.classList.add("w3-show");
+        }
+    }
+</script>
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+      showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+      }
+      x[slideIndex - 1].style.display = "block";  
+  }
+
+  // Auto-slide every 5 seconds
+  setInterval(function() { plusDivs(1); }, 5000);
+</script>
 
 </div>
 
